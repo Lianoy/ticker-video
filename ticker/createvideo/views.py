@@ -1,7 +1,7 @@
 from django.shortcuts import render
 from createvideo.models import Ticker
 from django import forms
-from django.http import HttpResponse, FileResponse
+from django.http import FileResponse
 
 # Create your views here.
 import cv2
