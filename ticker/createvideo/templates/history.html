@@ -1,0 +1,12 @@
+<table width="90%" borderline="2px" bordercolor="black" cellspacing="1" align="center">
+    {% for ticker in tickers %}
+        <tr>
+            <td>
+                "{{ ticker.text }}", {{ ticker.width }}x{{ ticker.height }}, {{ ticker.duration }}сек.
+            </td>
+            <td width="40">
+                <a href="../?text={{ ticker.text }}&width={{ ticker.width }}&height={{ ticker.height }}&duration={{ ticker.duration }}&save=no">Скачать</a>
+            </td>
+        </tr>
+    {% endfor %}
+</table>

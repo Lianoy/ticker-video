@@ -1,0 +1,15 @@
+<form method="post">
+    {% csrf_token %}
+    {{ tickerform.media }}
+    <fieldset>
+        Текст бегущей строки: {{ tickerform.text }}<br>
+    </fieldset>
+    <fieldset>
+        <legend>Параметры видео:</legend>
+        {{ tickerform.width.label_tag }} {{ tickerform.width }}<br>
+        {{ tickerform.height.label_tag }} {{ tickerform.height }}<br>
+        Длительность (в сек): {{ tickerform.duration }}<br>
+    </fieldset>
+    <br>
+    <button type="submit" formmethod="GET">Создать</button>
+</form>
