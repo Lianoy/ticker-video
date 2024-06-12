@@ -29,6 +29,7 @@ DEBUG = True
 ALLOWED_HOSTS = [
     'lianoy.pythonanywhere.com',
     '127.0.0.1',
+    'select-up-fowl.ngrok-free.app',
 ]
 
 
